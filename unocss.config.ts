@@ -1,0 +1,25 @@
+import {
+  defineConfig,
+  presetUno,
+  presetAttributify,
+  presetIcons,
+} from "unocss";
+
+export default defineConfig({
+  presets: [
+    presetUno(),
+    presetAttributify(),
+    presetIcons({
+      collections: {
+        mdi: () => import("@iconify-json/mdi/icons.json").then(i => i.default),
+        carbon: () =>
+          import("@iconify-json/carbon/icons.json").then(i => i.default),
+      },
+    }),
+  ],
+  shortcuts: [
+    ["wh-full", "w-full h-full"],
+    ["f-c-c", "flex justify-center items-center"],
+    ["f-col", "flex flex-col"],
+  ],
+});
