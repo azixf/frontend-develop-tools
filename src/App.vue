@@ -86,7 +86,7 @@ function onTabChange(tab: number) {
           {{ item.label }}
         </div>
       </aside>
-      <aside w-full h-full flex-1 border rounded border-slate-600>
+      <aside w-full h-full flex-1 border rounded border-slate-600 dark:border-gray-200>
         <keep-alive :max="20">
           <Component :is="tabList[activeTab].component"></Component>
         </keep-alive>
