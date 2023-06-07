@@ -1,5 +1,7 @@
 html,
 body,
 #app {
+  font-family: "hongleixingshu",Arial, Helvetica, sans-serif;
   min-height: 100vh;
+  width: 100vw;
 }

@@ -12,6 +12,7 @@
     "vue": "^3.2.47"
   },
   "devDependencies": {
+    "@chinese-fonts/hlxsjt": "^1.1.0",
     "@iconify-json/carbon": "^1.1.17",
     "@iconify-json/mdi": "^1.1.52",
     "@types/node": "^20.2.5",
@@ -23,6 +24,7 @@
     "element-plus": "^2.3.6",
     "eslint": "^8.42.0",
     "eslint-plugin-vue": "^9.14.1",
+    "sass": "^1.62.1",
     "typescript": "^5.0.2",
     "unocss": "^0.53.0",
     "unplugin-auto-import": "^0.16.4",

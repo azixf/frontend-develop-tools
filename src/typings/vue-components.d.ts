@@ -9,6 +9,10 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    ColorTransformer: typeof import('./../components/ColorTransformer.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
+    LanguageTransformer: typeof import('./../components/LanguageTransformer.vue')['default']
+    RandomColor: typeof import('./../components/RandomColor.vue')['default']
+    RegExpTools: typeof import('./../components/RegExpTools.vue')['default']
   }
 }
