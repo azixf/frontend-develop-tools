@@ -2,7 +2,6 @@
 <template>
   <iframe
     wh-full
-    name="translator"
     src="https://cn.bing.com/translator?ref=TThis&text=&from=zh-Hans&to=en"
     frameborder="0"
   ></iframe>
