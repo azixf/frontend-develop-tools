@@ -8,9 +8,8 @@ import unoCss from "unocss/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
-  const isProd = mode === "prodution";
+  const isProd = mode === "production";
   return {
-    publicDir: './',
     resolve: {
       alias: {
         "@": resolve(__dirname, "src"),
@@ -30,7 +29,7 @@ export default defineConfig(({ mode }) => {
           enabled: false,
         },
       }),
-      unoCss()
+      unoCss(),
     ],
     esbuild: {
       drop: ["console", "debugger"],
@@ -47,15 +46,6 @@ export default defineConfig(({ mode }) => {
           assetFileNames: "static/[ext]/[name]-[hash].[ext]",
           chunkFileNames: "static/js/[name]-[hash].js",
           entryFileNames: "static/js/entry-[name]-[hash].js",
-          manualChunks(id) {
-            if (id.includes("node_modules")) {
-              return id
-                .toString()
-                .split("node_modules/")[1]
-                .split("/")[0]
-                .toString();
-            }
-          },
         },
       },
     },
