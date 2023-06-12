@@ -10,6 +10,7 @@ import unoCss from "unocss/vite";
 export default defineConfig(({ mode }) => {
   const isProd = mode === "prodution";
   return {
+    publicDir: './',
     resolve: {
       alias: {
         "@": resolve(__dirname, "src"),
